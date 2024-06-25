@@ -10,17 +10,38 @@ local gamePieceAndBoardHandler = applyItemDetails.gamePieceAndBoardHandler
 -- CARDS
 --- CATAN RESOURCES DECK
 local CatanResourceDeck = {}
-CatanResourceDeck.types = {"Brick","Stone","Wood","Wheat","Sheep"}
+
+--Added paper, coins, and cloth (Snake)
+CatanResourceDeck.types = {"Brick","Stone","Wood","Wheat","Sheep", "Paper", "Coin", "Cloth"}
+
 CatanResourceDeck.cards = {}
 
 for _,s in pairs(CatanResourceDeck.types) do for i=1, 19 do table.insert(CatanResourceDeck.cards, s) end end
 deckActionHandler.addDeck("CatanResourceDeck", CatanResourceDeck.cards)
 
 --- CATAN DEVELOPMENTS DECK
-local CatanDevelopmentDeck = {}
+--local CatanDevelopmentDeck = {}
+--All three types of development cards (Snake)
+local CatanDevelopmentDeckScience = {}
+local CatanDevelopmentDeckTrade = {}
+local CatanDevelopmentDeckPolitics = {}
 
 --Five (5) Victory Point Cards (Chapel, Library, Market, Palace, University).
-CatanDevelopmentDeck.cards = {"Chapel", "Library", "Market", "Palace", "University"}
+--CatanDevelopmentDeck.cards = {"Chapel", "Library", "Market", "Palace", "University"}
+
+--All development cards for each deck (Snake)
+CatanDevelopmentDeckScience.cards = {"Alchemist", "Crane", "Mining", "Irrigation", "Printer", "Inventor", "Engineer", "Medicine", "Smith", "Road Building"}
+CatanDevelopmentDeckTrade.cards = {"Merchant", "Commercial Harbor", "Merchant Fleet", "Master Merchant", "Trade Monopoly", "Resource Monopoly"}
+CatanDevelopmentDeckPolitics.cards = {"Bishop", "Diplomat", "Warlord", "Wedding", "Intrigue", "Saboteur", "Spy", "Deserter", "Constitution"}
+
+
+
+
+
+--I STOPPED READING AND EDITING HERE (Snake)
+
+
+
 
 --Fourteen (14) Knight Cards.
 --Six (6) Progress Cards (2 x Monopoly, 2 x Road Building, 2 x Year of Plenty).
